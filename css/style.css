@@ -1,0 +1,69 @@
+html {
+	font-size: 62.5%;
+	font-family: "微软雅黑"
+}
+body {
+	background: #fff;
+	border-radius: 1rem;
+	padding: 0.5rem 1rem 1rem;
+	width: 19em
+}
+h1 {
+	font-size: 18px
+}
+.hidden {
+	display: none
+}
+.textarea-box {
+	line-height: 2.0rem;
+	border: 1px solid #E5E5E5;
+	border-radius: 0.3rem;
+	padding: 0.5rem 0.7rem 0.5rem;
+	margin-bottom: 1rem
+}
+.textarea-box span {
+	margin-right: 0.7rem;
+	display: inline-block
+}
+.textarea-box input {
+	display: inline-block;
+	border: 0;
+	padding: 0;
+	height: 1.8rem;
+	width: 12rem
+}
+.textarea-box input:focus, .result .textarea-box select:focus {
+	outline: 0
+}
+.result .textarea-box span {
+	margin-right: 0.7rem;
+	display: inline-block
+}
+.result .textarea-box input {
+	display: inline-block;
+	border: 0;
+	padding: 0 0.5rem;
+	height: 1.8rem;
+	width: 6rem;
+	margin-right: 2rem
+}
+.result .textarea-box select {
+	border: 0;
+	padding: 0;
+	height: 1.8rem;
+	width: 6rem
+}
+.btn a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #DD5862;
+	line-height: 2.0rem;
+	margin: 0 0 1rem;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border-radius: 0.3rem
+}
+#result {
+	width: 17rem
+}

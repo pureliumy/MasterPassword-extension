@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+	<meta charset=utf-8>
+	<title>Master Password</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<h1>Master Password</h1>
+		<div class="user">
+			<div class="textarea-box">
+				<span>用户名</span><input disabled name=fullname required>
+			</div>
+			<div class="textarea-box">
+				<span>主密码</span><input disabled name=masterpassword required type=password>
+			</div>
+			<div class="btn">
+				<a href="#" name="calculatekey">计算</a>
+			</div>
+		</div>
+		<div class="site">
+			<div class="textarea-box">
+				<span>网站网址</span>
+				<input disabled name=site required>
+			</div>
+		</div>
+		<div class="result">
+			<div class="textarea-box">
+				<input disabled class="password" id="result" readonly>
+			</div>
+			<div class="textarea-box">
+				<input disabled name=counter required type=number min=1 max=100 value=1>
+				<select disabled name=template required>
+					<option value=maximum>Maximum</option>
+					<option value=long selected>Long</option>
+					<option value=medium>Medium</option>
+					<option value=basic>Basic</option>
+					<option value=short>Short</option>
+					<option value=pin>PIN</option>
+					<option value=name>Name</option>
+					<option value=phrase>Phrase</option>
+				 </select>
+			</div>
+		</div>
+		<p><code class=error><noscript>You must have JavaScript enabled for this page to work.</noscript></code></p>
+		<div class="hidden">
+			<p><input disabled name=version required type=number min=0 max=3 value=3></p>
+			<p><label>Context: <input disabled name=context></label></p>
+			<p>
+			  <label>
+				Type:
+				<select disabled name=type required>
+					<option value=login>Username</option>
+					<option value=password selected>Password</option>
+					<option value=answer>Security Answer</option>
+				</select>
+			  </label>
+			</p>
+		</div>
+	</main>
+	<script type="text/javascript" src="js/need.js"></script>
+	<script src=js/manager.js></script>
+</body>
+</html>
